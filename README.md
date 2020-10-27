@@ -56,7 +56,7 @@ This service register itself in eureka naming server.
 This service register  the requests tracing by zipkins and rabbitMQ
 
 Tested inside those projects:
-- JPA
+- Spring data JPA
 - Spring cloud configuration server read from git repository
 - Rest template
 - Feign rest client 
