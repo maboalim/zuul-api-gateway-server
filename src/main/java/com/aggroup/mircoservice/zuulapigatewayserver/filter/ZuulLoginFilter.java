@@ -12,6 +12,7 @@ import com.netflix.zuul.exception.ZuulException;
 
 /**
  * This class is the zuul login filter for the microservice test project
+ * 
  * @author Mina
  *
  */
@@ -19,12 +20,13 @@ import com.netflix.zuul.exception.ZuulException;
 public class ZuulLoginFilter extends ZuulFilter {
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
+
 	/**
-	 * This method used to determine which cases  the filter should be applied
+	 * This method used to determine which cases the filter should be applied
 	 */
 	@Override
 	public boolean shouldFilter() {
-		
+
 		return true;
 	}
 
@@ -39,7 +41,8 @@ public class ZuulLoginFilter extends ZuulFilter {
 	}
 
 	/**
-	 * When we should apply the filter (before the request, after it, filter only error request [pre, post, error])
+	 * When we should apply the filter (before the request, after it, filter only
+	 * error request [pre, post, error])
 	 */
 	@Override
 	public String filterType() {
